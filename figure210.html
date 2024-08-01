@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaid Figures</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1>Anime Store</h1>
+    <video autoplay muted id="video-bg">
+        <source src="Animefon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="language-switcher">
+        <a href="figure210.html" class="lang-link">ENG</a>
+        <a href="figureru210.html" class="lang-link">RUS</a>
+        <a href="figureest210.html" class="lang-link">EST</a>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="button">Back</a>
+        <a href="contacts.html" class="button">Contacts</a>
+        <a href="about.html" class="button">About us</a>
+        <a href="news.html" class="button">News</a>
+        <a href="index.html" class="button">Next</a>
+    </div>
+</header>
+
+<p class="bigtext">Figures</p>
+
+<div class="products-container">
+    <div class="product" data-product-id="H38">
+        <img src="figurenanachi.png" alt="figurenanachi">
+        <div class="stars">★★★★★</div>
+        <p>Nanachi 19 cm</p>
+        <p>209.99 €</p>
+        <button onclick="addToCart('H38', 'Nanachi 19 cm [H38]', 209.99)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="cart-icon" onclick="toggleCart()">
+    <span id="cart-count" class="big-red-text">0</span>
+</div>
+
+<div class="cart" id="cart">
+    <h2>Cart</h2>
+    <div id="cart-items"></div>
+    <p class="purchase-instructions">Contact seller to complete purchase!</p>
+	<p class="purchase-instructions-extra">[Specify the quantity of each item when sending a message!]</p>
+    <form id="purchase-form" action="mailto:animaid999@gmail.com" method="post" enctype="text/plain">
+        <textarea name="message" id="cart-products" rows="4" placeholder="Your product numbers"></textarea><br>
+        <input type="submit" class="buttoncart" value="Send Order">
+    </form>
+    <button onclick="clearCart()">Clear Cart</button>
+</div>
+
+<div class="pagination">
+    <a href="figure15.html">1</a>
+    <a href="figure80.html">2</a>
+    <a href="figure120.html">3</a>
+    <a href="figure140.html">4</a>
+    <a href="figure200.html">5</a>
+    <a href="figure210.html">6</a>
+    <a href="figure350.html">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    <a href="#">11</a>
+    <a href="#">12</a>
+</div>
+
+<div id="search-block">
+    <div id="search-panel">
+        <label for="price-range">Price(€):</label>
+        <input type="range" id="price-range" name="price-range" min="5" max="500" step="5" value="5">
+        <span id="price-value">5 €</span>
+    </div>
+    <button id="search-button">Search</button>
+</div>
+
+
+<p class="bigtext">Categories</p>
+
+<div class="categoriescont">
+    <div class="categories">
+        <h2>Acrylic figures</h2>
+        <div><a href="acrylic5.html" class="category" id="category1"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Manga</h2>
+        <div><a href="manga15.html" class="category2" id="category2"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Figures</h2>
+        <div><a href="figure15.html" class="category3" id="category3"></a></div>
+    </div>
+</div>
+
+
+<div class="foxjump">
+    <img src="fox.png" alt="Fox" class="fox">
+</div>
+
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16251.474719088385!2d27.77608867220722!3d59.3924657183417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2see!4v1713205412390!5m2!1sru!2see" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-buttons">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="privacy_policy.html" class="footer-link">Privacy Policy</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="terms_of_service.html" class="footer-link">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<script src="figure.js"></script>
+</body>
+</html>

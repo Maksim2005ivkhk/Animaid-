@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaid Акриловые Фигурки </title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1>Магазин Аниме</h1>
+    <video autoplay muted id="video-bg">
+        <source src="Animefon.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег видео.
+    </video>
+
+    <div class="language-switcher">
+        <a href="acrylic5.html" class="lang-link">ENG</a>
+        <a href="acrylicru5.html" class="lang-link">RUS</a>
+        <a href="acrylicest5.html" class="lang-link">EST</a>
+    </div>
+
+    <div class="button-container">
+        <a href="indexru.html" class="button">Назад</a>
+        <a href="contactsru.html" class="button">Контакты</a>
+        <a href="aboutu.html" class="button">О нас</a>
+        <a href="newsru.html" class="button">Новости</a>
+        <a href="indexru.html" class="button">Далее</a>
+    </div>
+</header>
+
+<p class="bigtext">Акриловые Фигурки</p>
+
+<div class="products-container">
+    <div class="product" data-product-id="6F3">
+        <img src="acrylic_raiden_boss.png" alt="acrylic_raiden_boss">
+        <div class="stars">★★★★☆</div>
+        <p>Raiden shogun boss acrylic figure</p>
+		<p>5.99 €</p>
+        <button onclick="addToCart('6F3', 'Raiden shogun boss acrylic figure [6F3]', 5.99, 'acrylic_raiden_boss.png')">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-product-id="1S3">
+        <img src="acrylic_raiden.png" alt="acrylic_raiden">
+        <div class="stars">★★★☆☆</div>
+        <p>Raiden shogun acrylic figure</p>
+		<p>5.99 €</p>
+        <button onclick="addToCart('1S3', 'Raiden shogun acrylic figure [1S3]', 5.99, 'acrylic_raiden.png')">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-product-id="0B1">
+        <img src="Zhongli_acrylic.png" alt="Zhongli_acrylic">
+        <div class="stars">★★★★★</div>
+        <p>Zhongli acrylic figure</p>
+		<p>5.99 €</p>
+        <button onclick="addToCart('0B1', 'Zhongli acrylic figure [0B1]', 5.99, 'Zhongli_acrylic.png')">Добавить в корзину</button>
+    </div>
+</div>
+
+<div class="cart-icon" onclick="toggleCart()">
+    <span id="cart-count" class="big-red-text">0</span>
+</div>
+
+<div id="cart" class="cart">
+    <h2>Корзина</h2>
+    <div id="cart-items"></div>
+    <p id="purchase-instructions-1">Свяжитесь с продавцом для завершения покупки!</p>
+    <p id="purchase-instructions-2">[Укажите количество каждого товара при отправке сообщения!]</p>
+    <form id="purchase-form" action="mailto:animaid999@gmail.com" method="post" enctype="text/plain">
+        <textarea name="message" id="cart-products" rows="4" placeholder="Ваши номера товаров"></textarea><br>
+        <input type="submit" class="buttoncart" value="Отправить заказ">
+    </form>
+    <button onclick="clearCart()">Очистить корзину</button>
+</div>
+
+<div class="pagination">
+    <a href="acrylicru5.html">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    <a href="#">11</a>
+    <a href="#">12</a>
+</div>
+
+<div id="search-block">
+    <div id="search-panel">
+        <label for="price-range">Цена(€):</label>
+        <input type="range" id="price-range" name="price-range" min="5" max="500" step="5" value="5">
+        <span id="price-value">5 €</span>
+    </div>
+    <button id="search-button">Поиск</button>
+</div>
+
+<p class="bigtext">Категории</п>
+
+<div class="categoriescont">
+    <div class="categories">
+        <h2>Акриловые фигурки</h2>
+        <div><a href="acrylicru5.html" class="category" id="category1"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Манга</h2>
+        <div><a href="mangaru15.html" class="category2" id="category2"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Фигурки</h2>
+        <div><a href="figureru15.html" class="category3" id="category3"></a></div>
+    </div>
+</div>
+
+<div class="foxjump">
+    <img src="fox.png" alt="Лиса" class="fox">
+</div>
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16251.474719088385!2d27.77608867220722!3d59.3924657183417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2see!4v1713205412390!5m2!1sru!2see" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-buttons">
+            <a href="aboutru.html" class="footer-link">О нас</a>
+            <a href="privacy_policyru.html" class="footer-link">Политика конфиденциальности</a>
+            <a href="faqru.html" class="footer-link">FAQ</a>
+            <a href="terms_of_serviceru.html" class="footer-link">Условия использования</a>
+        </div>
+    </div>
+</footer>
+
+<script src="acrylic_figureru.js"></script>
+</body>
+</html>

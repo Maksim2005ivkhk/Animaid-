@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaid Figurid</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1>Anime Pood</h1>
+    <video autoplay muted id="video-bg">
+        <source src="Animefon.mp4" type="video/mp4">
+        Teie brauser ei toeta videot.
+    </video>
+
+    <div class="language-switcher">
+        <a href="figure120.html" class="lang-link">ENG</a>
+        <a href="figureru120.html" class="lang-link">RUS</a>
+        <a href="figureest120.html" class="lang-link">EST</a>
+    </div>
+
+    <div class="button-container">
+        <a href="indexest.html" class="button">Tagasi</a>
+        <a href="contactsest.html" class="button">Kontaktid</a>
+        <a href="aboutest.html" class="button">Meist</a>
+        <a href="newsest.html" class="button">Uudised</a>
+        <a href="indexest.html" class="button">Edasi</a>
+    </div>
+</header>
+
+<p class="bigtext">Figurid<</p>
+
+<div class="products-container">
+    <div class="product" data-product-id="C01">
+        <img src="figuremiko.png" alt="figuremiko">
+        <div class="stars">★★★★☆</div>
+        <p>Yae Miko 20 cm</p>
+        <p>119.99 €</p>
+        <button onclick="addToCart('C01', 'Yae Miko 20 cm [C01]', 119.99, 'figuremiko.png')">Lisa ostukorvi</button>
+    </div>
+</div>
+
+<div class="cart-icon" onclick="toggleCart()">
+    <span id="cart-count" class="big-red-text">0</span>
+</div>
+
+<div id="cart" class="cart">
+    <h2>Ostukorv</h2>
+    <div id="cart-items"></div>
+    <p id="purchase-instructions-1">Võtke müüjaga ühendust, et ost lõpule viia!</p>
+    <p id="purchase-instructions-2">[Märgi sõnumisse iga toote kogus!]</p>
+    <form id="purchase-form" action="mailto:animaid999@gmail.com" method="post" enctype="text/plain">
+        <textarea name="message" id="cart-products" rows="4" placeholder="Teie toodete numbrid"></textarea><br>
+        <input type="submit" class="buttoncart" value="Saada tellimus">
+    </form>
+    <button onclick="clearCart()">Tühjenda ostukorv</button>
+</div>
+
+<div class="pagination">
+    <a href="figureest15.html">1</a>
+    <a href="figureest80.html">2</a>
+    <a href="figureest120.html">3</a>
+    <a href="figureest140.html">4</a>
+    <a href="figureest200.html">5</a>
+    <a href="figureest210.html">6</a>
+    <a href="figureest350.html">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    <a href="#">11</a>
+    <a href="#">12</a>
+</div>
+
+<div id="search-block">
+    <div id="search-panel">
+        <label for="price-range">Hind (€):</label>
+        <input type="range" id="price-range" name="price-range" min="5" max="500" step="5" value="5">
+        <span id="price-value">5 €</span>
+    </div>
+    <button id="search-button">Otsi</button>
+</div>
+
+<p class="bigtext">Kategooriad</p>
+
+<div class="categoriescont">
+    <div class="categories">
+        <h2>Akrüülfiguurid</h2>
+        <div><a href="acrylicest5.html" class="category" id="category1"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Manga</h2>
+        <div><a href="mangaest15.html" class="category2" id="category2"></a></div>
+    </div>
+    <div class="categories">
+        <h2>Figuratsioonid</h2>
+        <div><a href="figureest15.html" class="category3" id="category3"></a></div>
+    </div>
+</div>
+
+<div class="foxjump">
+    <img src="fox.png" alt="Rebane" class="fox">
+</div>
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16251.474719088385!2d27.77608867220722!3d59.3924657183417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2see!4v1713205412390!5m2!1sru!2see" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-buttons">
+            <a href="aboutest.html" class="footer-link">Meist</a>
+            <a href="privacy_policyest.html" class="footer-link">Privaatsuspoliitika</a>
+            <a href="faqest.html" class="footer-link">KKK</a>
+            <a href="terms_of_serviceest.html" class="footer-link">Kasutustingimused</a>
+        </div>
+    </div>
+</footer>
+
+<script src="figureest.js"></script>
+</body>
+</html>

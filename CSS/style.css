@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+.stars {
+    font-size: 24px;
+    color: #f29050 ;
+    margin: 5px 0;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    width: 75px; 
+    height: 55px; 
+    background-image: url('cart.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 2%; 
+    z-index: 1000; 
+}
+
+.cart-icon:hover {
+    transform: scale(1.2); 
+}
+
+.cart {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    width: 425px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+	color: #f29050 ; 
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+#cart-items {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.big-red-text {
+	font-family: 'Arial Black', Arial, sans-serif; 
+    font-size: 17px; 
+    color: #f29050 ; 
+}
+.buttoncart {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: none; 
+    background-color: #f29050 ; 
+    color: #fff; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s ; 
+	border: none;
+	margin-bottom: 10px;
+}
+
+.buttoncart:hover {
+    background-color: #0f0f0f ; 
+    color: #fff; 
+}
+textarea {
+    width: 95%; 
+    padding: 10px; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: vertical; 
+}
+
+textarea:focus {
+    outline: none; 
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
